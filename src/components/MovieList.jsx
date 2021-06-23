@@ -1,11 +1,13 @@
 import React from 'react';
+import movies from '../data';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
     return (
-      <div>
-        hsuahas
-      </div>
+      <section className="list-container">
+        <MovieCard movie={ movies[0] } />
+      </section>
     );
   }
 }

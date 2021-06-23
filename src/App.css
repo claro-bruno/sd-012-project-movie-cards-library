@@ -28,15 +28,21 @@ body {
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   height: 450px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
+  transition: 0.3s;
 }
 
+.movie-card:hover {
+  background-color: #a3caf5;
+  height: 490px;
+  width: 340px;
+}
 
 .movie-card-image {
   width: 100%;
@@ -78,6 +84,6 @@ body {
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   padding: 12px 20px;
 }

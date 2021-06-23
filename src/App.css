@@ -35,7 +35,6 @@ body {
   height: 450px;
   margin: 5px;
   overflow: hidden;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   width: 300px;
 }
 

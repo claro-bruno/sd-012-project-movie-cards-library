@@ -5,9 +5,9 @@ import MovieCard from './MovieCard';
 class MovieList extends Component {
   render() {
     return (
-      <section>
+      <section className="movie-list">
         {
-          movies.map((movieCard) => <MovieCard key={ movieCard } />)
+          movies.map((movie) => <MovieCard key={ movie.title } movieProps={ movie } />)
         }
       </section>
     );

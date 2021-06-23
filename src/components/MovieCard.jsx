@@ -5,32 +5,32 @@ import '../App.css';
 
 class MovieCard extends React.Component {
   render() {
-    const { movies } = this.props;
+    const { movie } = this.props;
     return (
-      <div className="movie-list">
-        <div className="movie-card">
-          <img className="movie-card-image" src={ movies.imagePath } alt="" />
-          <main className="movie-card-body">
-            <h2 className="movie-card-title">{movies.title}</h2>
-            <p className="movie-card-subtitle">{movies.subtitle}</p>
-            <p className="movie-card-storyline">{movies.storyline}</p>
-            <div className="movie-card-rating">
-              <p>Rating</p>
-              <p className="rating">{movies.rating}</p>
-            </div>
-          </main>
-        </div>
+      <div className="movie-card">
+        <img className="movie-card-image" src={ movie.imagePath } alt="" />
+        <main className="movie-card-body">
+          <h2 className="movie-card-title">{movie.title}</h2>
+          <p className="movie-card-subtitle">{movie.subtitle}</p>
+          <p className="movie-card-storyline">{movie.storyline}</p>
+          <div className="movie-card-rating">
+            <p>Rating</p>
+            <p className="rating">{movie.rating}</p>
+          </div>
+        </main>
       </div>
     );
   }
 }
 
-MovieCard.defaultProps = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  storyline: PropTypes.string,
-  rating: PropTypes.number,
-  imagePath: PropTypes.string,
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }).isRequired,
 };
 
 export default MovieCard;

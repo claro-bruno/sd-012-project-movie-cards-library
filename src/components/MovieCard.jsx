@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
@@ -12,6 +13,7 @@ class MovieCard extends Component {
         <h4>{movie.title}</h4>
         <h5>{movie.subtitle}</h5>
         <p>{movie.storyline }</p>
+        <Rating rating={ movie.rating } />
       </section>
     );
   }

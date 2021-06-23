@@ -26,7 +26,7 @@ const movies = [
   },
 ];
 
-describe.skip('6 - Crie um componente `<MovieCard />`', () => {
+describe('6 - Crie um componente `<MovieCard />`', () => {
   const movie = movies[0];
 
   it('Renderize o componente `<MovieCard />`', () => {
@@ -34,7 +34,7 @@ describe.skip('6 - Crie um componente `<MovieCard />`', () => {
   });
 });
 
-describe.skip('7 - Renderize a imagem do filme dentro de uma tag `img`', () => {
+describe('7 - Renderize a imagem do filme dentro de uma tag `img`', () => {
   let wrapper;
   const movie = movies[0];
   it('Renderize a imagem do filme dentro de uma tag `img`', () => {

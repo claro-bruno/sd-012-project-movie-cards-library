@@ -1,8 +1,13 @@
 import React from 'react';
+import Card from './Card';
 
 class MovieCard extends React.Component {
   render() {
-    return 'xablau';
+    return (
+      <div>
+        <Card />
+      </div>
+    );
   }
 }
 

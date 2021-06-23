@@ -7,6 +7,7 @@ export default class MovieCard extends Component {
     return (
       <section>
         <img src={ imagePath } alt={ title } />
+        <h4>{ title }</h4>
       </section>
     );
   }

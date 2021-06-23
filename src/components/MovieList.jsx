@@ -6,7 +6,7 @@ const MovieList = (props) => {
   const { movies } = props;
   return (
     <ul>
-      { movies.map((movie) => <MovieCard key={ movie.title } alt={ movie.title } />) }
+      { movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />) }
     </ul>
   );
 };

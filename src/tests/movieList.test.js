@@ -35,15 +35,14 @@ describe('3 - Crie um componente `<MovieList />`', () => {
   });
 });
 
-describe
-  .skip('4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`', () => {
-    let wrapper;
+describe('4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`', () => {
+  let wrapper;
 
-    it('Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
-      wrapper = shallow(<MovieList movies={ movies } />);
-      expect(wrapper.find(MovieCard).length).toEqual(ratingThree);
-    });
+  it('Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
+    wrapper = shallow(<MovieList movies={ movies } />);
+    expect(wrapper.find(MovieCard).length).toEqual(ratingThree);
   });
+});
 
 describe.skip('5 - Passe uma key para cada `<MovieCard />` renderizado', () => {
   let wrapper;

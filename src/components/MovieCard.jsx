@@ -3,14 +3,14 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    const { movieInfo } = this.props;
+    const { info } = this.props;
     return (
-      <section className='movie-card'>
-        <section className='movie-card-body'>
-          <h4 className='movie-card-header'>{ movieInfo.title }</h4>
-          <h5 className='movie-card-subtitle'>{ movieInfo.subtitle }</h5>
-          <p className='movie-card-storyline'>{ movieInfo.storyline }</p>
-          <img className='movie-card-image' src={ movieInfo.imagePath } alt={ movieInfo.title } />
+      <section className="movie-card">
+        <section className="movie-card-body">
+          <img className="movie-card-image" src={ info.imagePath } alt={ info.title } />
+          <h4 className="movie-card-header">{ info.title }</h4>
+          <h5 className="movie-card-subtitle">{ info.subtitle }</h5>
+          <p className="movie-card-storyline">{ info.storyline }</p>
         </section>
       </section>
     );
@@ -18,12 +18,12 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movieInfo: PropTypes.shape({
+  info: PropTypes.shape({
+    imagePath: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     rating: PropTypes.number,
-    imagePath: PropTypes.string,
   }).isRequired,
 };
 

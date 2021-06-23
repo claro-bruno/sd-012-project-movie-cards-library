@@ -11,21 +11,21 @@ const movies = [
     subtitle: 'Movie Subtitle 1',
     storyline: 'Movie Storyline 1',
     rating,
-    imagePath: 'images/movie_1',
+    imagePath: '../images/Appleseed_Alpha.jpg',
   },
   {
     title: 'Movie Title 2',
     subtitle: 'Movie Subtitle 2',
     storyline: 'Movie Storyline 2',
     rating,
-    imagePath: 'images/movie_2',
+    imagePath: '../images/Final_Fantasy_Spirits_Within.jpg',
   },
   {
     title: 'Movie Title 3',
     subtitle: 'Movie Subtitle 3',
     storyline: 'Movie Storyline 3',
     ratingThree,
-    imagePath: 'images/movie_3',
+    imagePath: '../images/Ghost_In_The_Shell_2_0.jpg',
   },
 ];
 

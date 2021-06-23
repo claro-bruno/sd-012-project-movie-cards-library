@@ -22,10 +22,10 @@ export default MovieCard;
 
 MovieCard.propTypes = {
   film: PropTypes.shape({
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  storyline: PropTypes.string,
-  rating: PropTypes.number,
-  imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
   }).isRequired,
 };

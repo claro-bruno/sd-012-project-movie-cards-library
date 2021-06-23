@@ -21,6 +21,7 @@ body {
 
 .movie-list {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
   padding: 48px 30px;
 }
@@ -36,6 +37,7 @@ body {
   overflow: hidden;
   width: 300px;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 

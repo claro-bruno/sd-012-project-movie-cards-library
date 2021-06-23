@@ -6,8 +6,11 @@ import MovieList from './components/MovieList';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <MovieList />
+      <body>
+        <Header />
+        <MovieList />
+      </body>
+
     </div>
   );
 }

@@ -4,6 +4,12 @@ body {
   font-size: 16px;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
@@ -22,6 +28,8 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: center;
   padding: 48px 30px;
 }
 
@@ -32,9 +40,16 @@ body {
   display: flex;
   flex-direction: column;
   height: 450px;
-  margin: 5px;
+  margin: 10px;
   overflow: hidden;
   width: 300px;
+}
+
+.movie-card:hover {
+  box-shadow: 10px 15px 15px
+    rgba(128, 128, 128, 0.3) , -10px 15px 15px rgba(128, 128, 128, 0.3);
+  transform: scale(1.03);
+  transition-duration: 0.3s;
 }
 
 .movie-card-image {
@@ -79,4 +94,20 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  opacity: 80%;
+}
+
+.footer a:hover {
+  opacity: 100%;
 }

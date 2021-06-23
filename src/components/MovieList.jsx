@@ -7,9 +7,9 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <section className='movie-list'>        
+      <section className="movie-list">
         {
-          movies.map(movie => <MovieCard key={movie.title} Movie={movie} />)
+          movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)
         }
       </section>
     );
@@ -17,7 +17,13 @@ class MovieList extends React.Component {
 }
 
 MovieList.propTypes = {
-  Movies: PropTypes.object
-}
+  movies: PropTypes.arrayOf(PropTypes.exact({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  })).isRequired,
+};
 
 export default MovieList;

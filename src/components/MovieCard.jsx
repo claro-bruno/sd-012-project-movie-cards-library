@@ -4,18 +4,18 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { Movie } = this.props;
+    const { movie } = this.props;
     return (
-      <section className='movie-card'>
-        <img className='movie-card-image' src={Movie.imagePath} alt={Movie.title} />
-        <section className='movie-card-body'>
-          <h2 className='movie-card-title'>{Movie.title}</h2>
-          <h3 className='movie-card-subtitle'>{Movie.subtitle}</h3>
-          <p className='movie-card-storyline'>{Movie.storyline}</p>
+      <section className="movie-card">
+        <img className="movie-card-image" src={ movie.imagePath } alt={ movie.title } />
+        <section className="movie-card-body">
+          <h2 className="movie-card-title">{ movie.title }</h2>
+          <h3 className="movie-card-subtitle">{ movie.subtitle }</h3>
+          <p className="movie-card-storyline">{ movie.storyline }</p>
         </section>
-        <section className='movie-card-rating'>
+        <section className="movie-card-rating">
           <h4>Rating</h4>
-          <p className='rating'>{Movie.rating}</p>
+          <p className="rating">{ movie.rating }</p>
         </section>
       </section>
     );
@@ -23,7 +23,13 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  Movies: PropTypes.object,
-}
+  movie: PropTypes.exact({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }).isRequired,
+};
 
 export default MovieCard;

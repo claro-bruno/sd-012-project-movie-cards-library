@@ -4,7 +4,10 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     return (
-      <MovieCard />
+      <main>
+        <h2>Movie List</h2>
+        <MovieCard />
+      </main>
     );
   }
 }

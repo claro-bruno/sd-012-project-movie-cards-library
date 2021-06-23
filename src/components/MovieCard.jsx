@@ -7,10 +7,10 @@ const MovieCard = (props) => {
   const { title, subtitle, storyline, imagePath, rating } = movie;
   return (
     <li>
-      <h4>Title</h4>
-      <h5>Subtitle</h5>
-      <p>Storyline</p>
-      <img src="" alt="" />
+      <h4>{ title }</h4>
+      <h5>{ subtitle }</h5>
+      <p>{ storyline }</p>
+      <img src={ imagePath } alt="Poster" />
       <Rating rating={ rating } />
     </li>
   );

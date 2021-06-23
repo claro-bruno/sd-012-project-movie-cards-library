@@ -43,21 +43,23 @@ describe.skip('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   });
 });
 
-describe.skip('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
-  let wrapper;
-  const movie = movies[0];
-  it('Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
-    wrapper = shallow(<MovieCard movie={ movie } />);
-    expect(wrapper.find('Rating').length).toEqual(1);
+describe
+  .skip('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
+    let wrapper;
+    const movie = movies[0];
+    it('Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
+      wrapper = shallow(<MovieCard movie={ movie } />);
+      expect(wrapper.find('Rating').length).toEqual(1);
+    });
   });
-});
 
-describe.skip('14 - Passe como prop para o componente `<Rating/>` o atributo `rating`', () => {
-  let wrapper;
-  const movie = movies[0];
-  it('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
-    wrapper = mount(<MovieCard movie={ movie } />);
-    const starRating = wrapper.find(Rating);
-    expect(starRating.props().rating).toEqual(rating);
+describe
+  .skip('14 - Passe como prop para o componente `<Rating/>` o atributo `rating`', () => {
+    let wrapper;
+    const movie = movies[0];
+    it('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
+      wrapper = mount(<MovieCard movie={ movie } />);
+      const starRating = wrapper.find(Rating);
+      expect(starRating.props().rating).toEqual(rating);
+    });
   });
-});

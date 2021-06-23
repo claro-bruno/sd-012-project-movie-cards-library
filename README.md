@@ -381,6 +381,8 @@ Crie um componente que represente a avaliação de um filme.
 
   - O valor da *prop* `rating` é a propriedade `rating` do filme.
 
+  - Rating deve ter uma classe `rating`.
+
 ### 15 - Crie um componente `<App />`
 
 O componente `<App />` deve renderizar um componente `<Header />`.

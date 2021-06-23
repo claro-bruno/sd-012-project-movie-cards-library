@@ -7,7 +7,7 @@ class MovieCard extends React.Component {
     const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
     return (
       <div>
-        <span>{title}</span>
+        <span>asdasdf {title}</span>
       </div>
     );
   }

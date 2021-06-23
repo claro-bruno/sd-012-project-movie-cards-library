@@ -5,30 +5,40 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
-    const movies = this.props;
+    const { movie } = this.props;
     return (
       <div className="movie-card">
-        <img
-          className="movie-card-image"
-          src={ movies.imagePath }
-          alt={ movies.titleImg }
-        />
-        <p className="movie-card-title">{movies.title}</p>
-        <p className="movie-card-subtitle">{movies.subtitle}</p>
-        <p className="movie-card-storyline">{movies.storyline}</p>
-        <span className="rating">{movies.rating}</span>
+        <div className="movie-card-body">
+          <img
+            className="movie-card-image"
+            src={ movie.imagePath }
+            alt={ movie.title }
+          />
+          <h4 className="movie-card-title">{movie.title}</h4>
+          <h5 className="movie-card-subtitle">{movie.subtitle}</h5>
+          <p className="movie-card-storyline">{movie.storyline}</p>
+        </div>
       </div>
     );
   }
 }
 
 MovieCard.propTypes = {
-  imagePath: PropTypes.string.isRequired,
-  titleImg: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
+  movie: PropTypes.objectOf({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+  }),
+};
+
+MovieCard.defaultProps = {
+  movie: {
+    imagePath: 'imagem',
+    title: 'title',
+    subtitle: 'subtitle',
+    storyline: 'storyline',
+  },
 };
 
 export default MovieCard;

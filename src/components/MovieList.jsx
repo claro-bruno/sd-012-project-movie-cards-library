@@ -6,21 +6,15 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    const movies = this.props;
+    const { movies } = this.props;
     return (
       <section className="movie-list">
-        {movies.movies.map((movie) => {
-          const { imagePath, title, subtitle, storyline, rating = 0 } = movie;
-          return (<MovieCard
-            imagePath={ imagePath }
-            titleImg={ title }
-            title={ title }
-            subtitle={ subtitle }
-            storyline={ storyline }
-            rating={ rating }
-            key={ title }
-          />);
-        })}
+
+        {movies.map((movie) => (<MovieCard
+          movie={ movie }
+          key={ movie.title }
+        />))}
+
       </section>
     );
   }

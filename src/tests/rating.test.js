@@ -29,13 +29,13 @@ const movies = [
   },
 ];
 
-describe.skip('11 - Crie um componente `<Rating />`', () => {
+describe('11 - Crie um componente `<Rating />`', () => {
   it('Renderize o componente `<Rating />`', () => {
     shallow(<Rating />);
   });
 });
 
-describe.skip('12 - Renderize a nota de um filme dentro de `Rating`', () => {
+describe('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   let wrapper;
   it('Renderize a nota de um filme dentro de `Rating`', () => {
     wrapper = shallow(<Rating rating={ 3 } />);
@@ -43,23 +43,21 @@ describe.skip('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   });
 });
 
-describe
-  .skip('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
-    let wrapper;
-    const movie = movies[0];
-    it('Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
-      wrapper = shallow(<MovieCard movie={ movie } />);
-      expect(wrapper.find('Rating').length).toEqual(1);
-    });
+describe('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
+  let wrapper;
+  const movie = movies[0];
+  it('Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
+    wrapper = shallow(<MovieCard movie={ movie } />);
+    expect(wrapper.find('Rating').length).toEqual(1);
   });
+});
 
-describe
-  .skip('14 - Passe como prop para o componente `<Rating/>` o atributo `rating`', () => {
-    let wrapper;
-    const movie = movies[0];
-    it('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
-      wrapper = mount(<MovieCard movie={ movie } />);
-      const starRating = wrapper.find(Rating);
-      expect(starRating.props().rating).toEqual(rating);
-    });
+describe('14 - Passe como prop para o componente `<Rating/>` o atributo `rating`', () => {
+  let wrapper;
+  const movie = movies[0];
+  it('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
+    wrapper = mount(<MovieCard movie={ movie } />);
+    const starRating = wrapper.find(Rating);
+    expect(starRating.props().rating).toEqual(rating);
   });
+});

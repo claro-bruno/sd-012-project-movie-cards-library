@@ -6,7 +6,7 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      <section className="movie-import PropTypes from 'prop-types';list">
+      <section className="movie-list">
         {movies.map((mv) => (
           <MovieCard movie={ mv } key={ mv.title } />
         ))}

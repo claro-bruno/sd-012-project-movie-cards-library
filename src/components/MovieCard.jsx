@@ -14,7 +14,7 @@ class MovieCard extends Component {
           <p>{ movie.storyline }</p>
         </div>
         <div>
-          <Rating />
+          <Rating rating={ movie.rating } />
         </div>
       </div>
     );

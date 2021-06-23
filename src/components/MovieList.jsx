@@ -3,9 +3,10 @@ import React from 'react';
 import data from '../data';
 import MovieCard from './MovieCard';
 
+// prettier-ignore
 class MovieList extends React.Component {
   render() {
-    data.map((movie) => <MovieCard obj={movie} />);
+    return data.map((movie) => <MovieCard key={ movie.title } obj={ movie } />);
   }
 }
 

@@ -7,11 +7,11 @@ class MovieCard extends Component {
     const { movie } = this.props;
 
     return (
-      <div>
+      <div className="movie-card">
         <div>
-          MovieCard Info
+          {movie.title}
         </div>
-        <Rating score={ movie.rating } />
+        <Rating rating={ movie.rating } />
       </div>
     );
   }

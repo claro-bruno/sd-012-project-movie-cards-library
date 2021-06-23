@@ -5,7 +5,7 @@ import data from '../data';
 class MovieList extends Component {
   render() {
     return (
-      <section>
+      <section className="movie-list">
         {data.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </section>
     );

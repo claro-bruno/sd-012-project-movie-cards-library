@@ -22,8 +22,8 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  padding: 48px 30px;
   justify-content: space-around;
+  padding: 48px 30px;
 }
 
 .movie-card {

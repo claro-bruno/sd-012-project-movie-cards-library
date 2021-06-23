@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 const Rating = (props) => {
   const { rating } = props;
   return (
-    <p>
-      <span>{ rating }</span>
+    <p className="movie-card-rating">
+      <span className="rating">{ rating }</span>
     </p>
   );
 };

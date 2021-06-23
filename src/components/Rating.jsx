@@ -1,4 +1,3 @@
-// implement Rating component here
 import React, { Component } from 'react';
 import '../App.css';
 import PropTypes from 'prop-types';

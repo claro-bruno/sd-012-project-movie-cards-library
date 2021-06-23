@@ -5,7 +5,9 @@ import Rating from './Rating';
 class MovieList extends React.Component {
   render() {
     return (
-      <Rating rating="" />
+      <div>
+        <Rating rating="" />
+      </div>
     );
   }
 }

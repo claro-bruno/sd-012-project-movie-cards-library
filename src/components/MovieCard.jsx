@@ -1,6 +1,5 @@
 import React from 'react';
 import Rating from './Rating';
-import PropType from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {

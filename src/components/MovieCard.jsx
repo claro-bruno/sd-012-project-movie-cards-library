@@ -3,22 +3,22 @@ import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { movies } = this.props;
-    const { title, subtitle, storyline, rating, imagePath } = movies;
+    const { movie } = this.props;
+    const { title, subtitle, storyline, rating, imagePath } = movie;
     return (
       <div>
-        <p>{title}</p>
+        <h2>{title}</h2>
         <p>{subtitle}</p>
         <p>{storyline}</p>
         <p>{rating}</p>
-        <p>{imagePath}</p>
+        <img src={ imagePath } alt={ imagePath } />
       </div>
     );
   }
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
@@ -26,5 +26,10 @@ MovieCard.propTypes = {
     imagePath: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+// MovieCard.defaultProps = { // esta parte é para o requisito 7
+//   src: 'imagem',
+//   atl: 'nome-imagem',
+// };
 
 export default MovieCard;

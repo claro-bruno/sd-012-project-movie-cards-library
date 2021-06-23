@@ -7,9 +7,9 @@ class MovieList extends React.Component {
     return (
       <div>
         <p>MovieList</p>
-        <MovieCard />
-        <MovieCard />
-        <MovieCard />
+        <MovieCard key="Movie Title 1" />
+        <MovieCard key="Movie Title 2" />
+        <MovieCard key="Movie Title 3" />
       </div>
     );
   }

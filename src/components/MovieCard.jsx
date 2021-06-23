@@ -1,24 +1,17 @@
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const {
-      title,
-      subtitle,
-      storyline,
-      imagePath,
-      rating,
-    } = this.props.movie;
+    const { movie } = this.props;
 
     return (
       <div>
-        <p>{title}</p>
-        <p>{subtitle}</p>
-        <p>{storyline}</p>
-        <p>{imagePath}</p>
-        <p>{rating}</p>
+        <p>{ movie.title }</p>
+        <p>{ movie.subtitle }</p>
+        <p>{ movie.storyline }</p>
+        <p>{ movie.imagePath }</p>
+        <p>{ movie.rating }</p>
       </div>
     );
   }
@@ -30,7 +23,7 @@ MovieCard.propTypes = {
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     imagePath: PropTypes.string,
-    rating: PropTypes.string,
+    rating: PropTypes.number,
   }).isRequired,
 };
 

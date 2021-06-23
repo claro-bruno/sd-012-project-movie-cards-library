@@ -5,7 +5,7 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
 
-    return <h1>{movies}</h1>;
+    return ({ movies });
   }
 }
 

@@ -6,7 +6,7 @@ import MovieCard from './MovieCard';
 // prettier-ignore
 class MovieList extends React.Component {
   render() {
-    return data.map((movie) => <MovieCard key={ movie.title } obj={ movie } />);
+    return data.map((item) => <MovieCard key={ item.title } obj={ item } />);
   }
 }
 

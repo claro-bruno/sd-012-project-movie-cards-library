@@ -26,6 +26,7 @@ body {
 }
 
 .movie-list {
+  background-color: rgba(128, 128, 128, 0.3);
   display: flex;
   flex-flow: row wrap;
   flex-grow: 1;

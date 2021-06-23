@@ -7,10 +7,10 @@ body {
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
+  color: white;
   display: flex;
   height: 100px;
   justify-content: center;
-  color: white;
 }
 
 .page-title {

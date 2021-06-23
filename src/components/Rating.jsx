@@ -1,11 +1,11 @@
 import React from 'react';
 
-class MovieList extends React.Component {
+class Rating extends React.Component {
   render() {
     return (
-      <div />
+      <Rating rating={ Rating } />
     );
   }
 }
 
-export default MovieList;
+export default Rating;

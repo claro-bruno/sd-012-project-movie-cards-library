@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
+import PropsType from 'prop-types';
 
 class MovieList extends React.Component {
   render() {
@@ -10,6 +11,10 @@ class MovieList extends React.Component {
       </div>
     );
   }
+}
+
+MovieList.propsType ={
+
 }
 
 export default MovieList;

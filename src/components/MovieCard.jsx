@@ -9,8 +9,8 @@ class MovieCard extends React.Component {
     const { title, subtitle, storyline, imagePath, rating } = this.props.movies
     return(
       <div>
-        {movies.map((movie) => <MovieList key={movie}/>)}
         <img src={movies.imagePath} alt={movies.title}/>
+        <h4>{movies.title}</h4>
       </div>
     )
   }

@@ -6,14 +6,14 @@ body {
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: #072b50;
   display: flex;
   height: 150px;
   justify-content: center;
 }
 
 .page-title {
-  color: #f8f9fa;
+  color: #427fbb;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -21,15 +21,16 @@ body {
 }
 
 .movie-list {
+  background-color: rgb(9, 25, 68);
   display: flex;
   flex-flow: row wrap;
   padding: 48px 30px;
 }
 
 .movie-card {
-  background-color: white;
+  background-color: rgb(134, 160, 209);
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   height: 450px;
@@ -55,7 +56,7 @@ body {
 }
 
 .movie-card-subtitle {
-  color: #6c757d;
+  color: #354350;
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
@@ -69,10 +70,10 @@ body {
 .rating {
   background-color: #007bff;
   border-radius: 25px;
-  color: white;
+  color: rgb(47, 47, 49);
   font-size: 16px;
   font-weight: 700;
-  padding: 3px 9px;
+  padding: 0px 10px;
 }
 
 .movie-card-rating {
@@ -81,4 +82,9 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.nota::before {
+  content: "Nota do filme: ";
+  margin-left: 30%;
 }

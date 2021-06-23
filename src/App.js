@@ -9,6 +9,9 @@ function App() {
     <div className="App">
       <Header />
       <MovieList movies={ movies } />
+      <footer className="page-footer">
+        Desenvolvido por Guilherme Hermenegildo Junior
+      </footer>
     </div>
   );
 }

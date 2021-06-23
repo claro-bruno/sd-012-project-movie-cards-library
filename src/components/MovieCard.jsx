@@ -24,7 +24,7 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.objectOf({
+  movie: PropTypes.shape({
     imagePath: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,

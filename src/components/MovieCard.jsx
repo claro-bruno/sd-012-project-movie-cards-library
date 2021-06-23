@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class MovieCard extends Component {
+export default class MovieCard extends Component {
   render() {
+    const { movie: { imagePath, title } } = this.props;
     return (
       <section>
-        <h2>Movie Card</h2>
+        <img src={ imagePath } alt={ title } />
       </section>
     );
   }
 }
 
-export default MovieCard;
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+  }).isRequired,
+};

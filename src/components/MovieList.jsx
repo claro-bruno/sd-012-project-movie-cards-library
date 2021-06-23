@@ -1,9 +1,11 @@
 import React from 'react';
+import Movie from '../data';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
     return (
-      <section className="movie-list">xablau</section>
+      <section className="movie-list"><MovieCard /></section>
     );
   }
 }

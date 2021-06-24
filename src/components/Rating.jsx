@@ -13,7 +13,7 @@ class Rating extends React.Component {
   }
 }
 Rating.defaultProps = {
-  rating: 5,
+  rating: 'undefined',
 };
 
 Rating.propTypes = {

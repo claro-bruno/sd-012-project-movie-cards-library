@@ -10,11 +10,10 @@ class MovieCard extends React.Component {
       <div className="card card-aux">
         <img className="card-img-top" src={ imagePath } alt="Imagem de capa do card" />
         <div className="card-body">
-          <h5 className="card-title">{ title }</h5>
-          <p className="card-text">{ subtitle }</p>
+          <h4 className="card-title">{ title }</h4>
+          <h5 className="card-text">{ subtitle }</h5>
           <p>{ storyline }</p>
           <div className="d-flex justify-content-around">
-            <p>Rating</p>
             <span>{ rating }</span>
           </div>
         </div>

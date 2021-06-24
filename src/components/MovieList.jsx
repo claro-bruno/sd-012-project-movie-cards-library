@@ -12,7 +12,7 @@ class MovieList extends React.Component {
             (movie) => (
               <MovieCard
                 className="movie-card-body"
-                key={ movie.id }
+                key={ movie.title }
                 MovieInfo={ movie }
               />
             ),

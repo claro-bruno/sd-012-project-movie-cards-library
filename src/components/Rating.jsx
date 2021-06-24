@@ -5,15 +5,18 @@ import PropTypes from 'prop-types';
 // prettier-ignore
 class Rating extends React.Component {
   render() {
-    const { value } = this.props;
+    const { rating } = this.props;
     return (
-      <span>{ value }</span>
+      <span className="rating">{ rating }</span>
     );
   }
 }
 
 Rating.propTypes = {
-  value: PropTypes.number.isRequired,
+  rating: PropTypes.number,
 };
 
+Rating.defaultProps = {
+  rating: 4.5,
+};
 export default Rating;

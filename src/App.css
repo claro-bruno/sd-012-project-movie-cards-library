@@ -33,11 +33,9 @@ body {
   flex-direction: column;
   height: 450px;
   margin: 5px;
+  margin: auto auto 5%;
   overflow: hidden;
   width: 300px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  margin: auto auto 5% ;
 }
 
 

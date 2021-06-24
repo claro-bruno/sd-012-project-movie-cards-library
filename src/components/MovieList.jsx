@@ -15,6 +15,7 @@ class MovieList extends React.Component {
         storyline={ movie.storyline }
         rating={ movie.rating }
         imagePath={ movie.imagePath }
+        className="movie-list"
       />
     ));
   }

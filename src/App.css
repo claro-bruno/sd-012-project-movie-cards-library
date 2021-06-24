@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgb(151, 16, 16);
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -36,7 +36,15 @@ body {
   overflow: hidden;
   width: 300px;
 }
-
+.movie-card:hover {
+  background-color: yellow;
+  box-sizing: border-box;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 .movie-card-image {
   width: 100%;

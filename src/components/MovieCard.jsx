@@ -24,8 +24,8 @@ MovieCard.propTypes = {
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
     imagePath: PropTypes.string.isRequired,
-    rating: PropTypes.number.isRequired,
-  }).isRequired,
+    rating: PropTypes.number,
+  }),
 };
 
 export default MovieCard;

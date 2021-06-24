@@ -36,15 +36,15 @@ body {
   overflow: hidden;
   width: 300px;
 }
-.movie-card:hover {
+/* .movie-card:hover {
   background-color: yellow;
-  box-sizing: border-box;
-  /* -webkit-transform: scale(1.1);
+  box-sizing: border-box; 
+  -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1); */
-}
+  transform: scale(1.1);
+} */
 
 .movie-card-image {
   width: 100%;

@@ -1,3 +1,9 @@
-// implement MovieCard component here
-// import movies from '../data';
-// movieList = movies;
+import React from 'react';
+
+class MovieCard extends React.Component {
+  render() {
+    return <div />;
+  }
+}
+
+export default MovieCard;

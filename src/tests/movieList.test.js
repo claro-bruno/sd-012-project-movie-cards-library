@@ -35,7 +35,7 @@ describe('3 - Crie um componente `<MovieList />`', () => {
   });
 });
 const testTxT = '4 - Renderize componentes `<MovieCard />` dentro de `<MovieList />`';
-describe.skip(`${testTxT}`, () => {
+describe(`${testTxT}`, () => {
   let wrapper;
 
   it('Renderize componentes `<MovieCard />` dentro de `MovieList`', () => {
@@ -44,7 +44,7 @@ describe.skip(`${testTxT}`, () => {
   });
 });
 
-describe.skip('5 - Passe uma key para cada `<MovieCard />` renderizado', () => {
+describe('5 - Passe uma key para cada `<MovieCard />` renderizado', () => {
   let wrapper;
   it('Passe uma key para cada `<MovieCard />` renderizado', () => {
     wrapper = mount(<MovieList movies={ movies } />);

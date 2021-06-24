@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-  background-color: black;
+  background-color: #343a40;
   display: block;
   height: 110px;
   text-align: center;
@@ -50,7 +50,7 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  height: 450px;
+  height: 400px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
@@ -94,7 +94,6 @@ body {
 }
 
 .movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;

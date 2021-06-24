@@ -76,9 +76,9 @@ body {
 
 .movie-card-rating {
   display: flex;
-  justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
+  justify-content: space-around;
   padding: 12px 20px;
 }

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
+import '../styles/movielist.css';
 
 class MovieList extends Component {
   render() {
     const { movies } = this.props;
 
     return (
-      <section>
+      <section className="movie-list">
         {movies.map((movie) => (<MovieCard movie={ movie } key={ movie.title } />))}
       </section>
     );

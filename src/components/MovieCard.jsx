@@ -3,14 +3,14 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    const { info } = this.props;
+    const { movie } = this.props;
     return (
       <section className="movie-card">
         <section className="movie-card-body">
-          <img className="movie-card-image" src={ info.imagePath } alt={ info.title } />
-          <h4 className="movie-card-header">{ info.title }</h4>
-          <h5 className="movie-card-subtitle">{ info.subtitle }</h5>
-          <p className="movie-card-storyline">{ info.storyline }</p>
+          <img className="movie-card-image" src={ movie.imagePath } alt={ movie.title } />
+          <h4 className="movie-card-header">{ movie.title }</h4>
+          <h5 className="movie-card-subtitle">{ movie.subtitle }</h5>
+          <p className="movie-card-storyline">{ movie.storyline }</p>
         </section>
       </section>
     );
@@ -18,7 +18,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  info: PropTypes.shape({
+  movie: PropTypes.shape({
     imagePath: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,

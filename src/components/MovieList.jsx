@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrayOf, objectOf } from 'prop-types';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 import '../App.css';
 
@@ -18,9 +18,9 @@ class MovieList extends React.Component {
 }
 
 MovieList.propTypes = {
-  movies: arrayOf(objectOf),
+  movies: PropTypes.arrayOf(
+    PropTypes.object,
+  ).isRequired,
 };
-
-MovieList.defaultProps = ['object'];
 
 export default MovieList;

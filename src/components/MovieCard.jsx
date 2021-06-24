@@ -29,4 +29,4 @@ MovieCard.propTypes = {
     rating: PropTypes.number,
     imagePath: PropTypes.string,
   }).isRequired,
-}
+};

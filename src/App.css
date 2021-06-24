@@ -1,22 +1,23 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgb(51, 61, 73);
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: #0e0d0d;
   display: flex;
   height: 100px;
   justify-content: center;
 }
 
 .page-title {
-  color: #f8f9fa;
-  font-size: 28px;
-  font-weight: 500;
+  color: #ca0d00;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
+  font-family: fantasy;
 }
 
 .movie-list {
@@ -26,8 +27,8 @@ body {
 }
 
 .movie-card {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(241, 241, 241, 0.356);
+  border: 1px solid rgba(223, 9, 9, 0.932);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -36,7 +37,10 @@ body {
   overflow: hidden;
   width: 300px;
 }
-
+.movie-card:hover {
+ transform: scale(1.2);
+   transition-duration: 0.8s;
+}
 
 .movie-card-image {
   width: 100%;
@@ -51,10 +55,11 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
+  color: #ffffff;
 }
 
 .movie-card-subtitle {
-  color: #6c757d;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
@@ -63,6 +68,7 @@ body {
 .movie-card-storyline {
   font-size: 14px;
   text-align: justify;
+  color: #ffffff;
 }
 
 .rating {

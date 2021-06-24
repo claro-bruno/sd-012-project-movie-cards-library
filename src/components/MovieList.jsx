@@ -13,7 +13,7 @@ class Movies extends React.Component {
 }
 
 Movies.propTypes = {
-  movies: PropTypes.objectOf(
+  movies: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
     }),

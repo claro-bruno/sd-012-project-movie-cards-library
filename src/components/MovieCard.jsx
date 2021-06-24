@@ -19,9 +19,7 @@ class MovieCard extends React.Component {
           <p>
             { movie.storyline }
           </p>
-          <Rating rating={ movie.rating } />
-          {/* { movies.map((movie) => <Rating key={ movie */}
-          {/* .rating } movie={ movie.rating } />) } */}
+            <Rating rating={ movie.rating } />
         </section>
       </div>);
   }

@@ -1,9 +1,7 @@
 // implement MovieCard component here
 import React from 'react';
-import movies from '../data';
-import Rating from './Rating';
 import PropTypes from 'prop-types';
-import { string } from 'yargs';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
@@ -31,6 +29,10 @@ MovieCard.propTypes = {
     storyline: PropTypes.string.isRequired,
     rating: PropTypes.number,
   }),
+};
+
+MovieCard.defaultProps = {
+  movie: {},
 };
 
 export default MovieCard;

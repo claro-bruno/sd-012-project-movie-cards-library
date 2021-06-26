@@ -29,7 +29,7 @@ const movies = [
   },
 ];
 
-describe.skip('11 - Crie um componente `<Rating />`', () => {
+describe('11 - Crie um componente `<Rating />`', () => {
   it('Renderize o componente `<Rating />`', () => {
     shallow(<Rating />);
   });

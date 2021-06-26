@@ -1,23 +1,17 @@
 import React from 'react';
 import './App.css';
-import catalog from './data';
+import movie from './data';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-// import MovieCard from './components/MovieCard';
 import Rating from './components/Rating';
 
 function App() {
   return (
-    <main>
+    <div className="App">
       <Header />
-      <MovieList movie={ catalog[0] } />
-      <MovieList movie={ catalog[1] } />
-      <MovieList movie={ catalog[2] } />
-      <MovieList movie={ catalog[3] } />
-      <MovieList movie={ catalog[4] } />
+      <MovieList movies={ movie } />
       <Rating />
-      <div className="App" />
-    </main>
+    </div>
   );
 }
 

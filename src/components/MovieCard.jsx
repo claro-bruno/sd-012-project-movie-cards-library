@@ -14,8 +14,8 @@ class MovieCard extends React.Component {
           <p className="movie-card-storyline">{ movie.storyline }</p>
         </section>
         <section className="movie-card-rating">
-          <p>Rating</p>
-          <p className="rating">{ movie.rating }</p>
+          <span>Rating</span>
+          <span className="rating">{ movie.rating }</span>
         </section>
       </section>
     );

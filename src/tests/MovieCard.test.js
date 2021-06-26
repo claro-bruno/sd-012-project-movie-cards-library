@@ -26,7 +26,7 @@ const movies = [
   },
 ];
 
-describe.skip('6 - Crie um componente `<MovieCard />`', () => {
+describe('6 - Crie um componente `<MovieCard />`', () => {
   const movie = movies[0];
 
   it('Renderize o componente `<MovieCard />`', () => {

@@ -52,7 +52,7 @@ describe('8 - Renderize o título do filme dentro de uma tag `h4`', () => {
   });
 });
 
-describe.skip('9 - Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
+describe('9 - Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
   let wrapper;
   const movie = movies[0];
   it('Renderize o subtítulo do filme dentro de uma tag `h5`', () => {

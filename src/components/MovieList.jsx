@@ -7,6 +7,8 @@ class MovieList extends React.Component {
     return (
       <section>
         <MovieCard />
+        <MovieCard />
+        <MovieCard />
       </section>
     );
   }

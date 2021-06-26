@@ -34,6 +34,55 @@ const movies = [
     rating: 4.2,
     imagePath: 'images/Resident_Evil_Vendetta.jpg',
   },
+  {
+    title: 'Dawn of the Dead',
+    subtitle: 'Dawn of the Dead',
+    storyline: 'A nurse, a policeman, a young married couple, a salesman, and other survivors of a worldwide plague that is producing aggressive, flesh-eating zombies, take refuge in a mega Midwestern shopping mall.',
+    rating: 4.5,
+    imagePath: 'images/dawn-of-the-dead.jpg',
+  },
+  {
+    title: 'John Wick 3',
+    subtitle: 'Parabellum',
+    storyline: 'Super-assassin John Wick is on the run after killing a member of the international assassin’s guild, and with a $14 million price tag on his head – he is the target of hit men and women everywhere.',
+    rating: 4.9,
+    imagePath: 'images/john-wickk.jpg',
+  },
+  {
+    title: 'Star Wars VI',
+    subtitle: 'Return of the Jedi',
+    storyline: 'While the Galactic Empire attempts to build a second Death Star, the Rebel Alliance must rescue Han Solo from the evil Jabba the Hutt, and Luke Skywalker tries to bring his father back from the dark side.',
+    rating: 5,
+    imagePath: 'images/0980a18f62b2d90e025a89fc8cf2fbb5-700.jpg',
+  },
+  {
+    title: 'Star Trek II',
+    subtitle: 'The Wrath of Khan',
+    storyline: 'Admiral Kirk’s midlife crisis is interrupted by the return of an old enemy looking for revenge and a potentially destructive device.',
+    rating: 4.8,
+    imagePath: 'images/d3vruawb-720.jpg',
+  },
+  {
+    title: 'Resident Evil',
+    subtitle: 'Vendetta',
+    storyline: 'Chris Redfield enlists the help of Leon S. Kennedy and Rebecca Chambers to stop a death merchant, with a vengeance, from spreading a deadly virus in New York.',
+    rating: 4.2,
+    imagePath: 'images/Resident_Evil_Vendetta.jpg',
+  },
+  {
+    title: 'Appleseed Alpha',
+    subtitle: 'Appleseed Alpha',
+    storyline: 'A young female soldier Deunan and her cyborg partner Briareos survive through the post World War 3 apocalyptic New York in search of human\'s future hope, the legendary city of Olympus.',
+    rating: 3.8,
+    imagePath: 'images/Appleseed_Alpha.jpg',
+  },
+  {
+    title: 'Resident Evil',
+    subtitle: 'Vendetta',
+    storyline: 'Chris Redfield enlists the help of Leon S. Kennedy and Rebecca Chambers to stop a death merchant, with a vengeance, from spreading a deadly virus in New York.',
+    rating: 4.2,
+    imagePath: 'images/Resident_Evil_Vendetta.jpg',
+  },
 ];
 
 export default movies;

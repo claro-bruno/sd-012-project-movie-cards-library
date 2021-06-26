@@ -14,10 +14,12 @@ class MovieList extends React.Component {
   }
 }
 
+// Validadores PropTypes para garanitir que o objeto tem chave e valor de tipos expecificos.
+// ref= https://blog.logrocket.com/validating-react-component-props-with-prop-types-ef14b29963fc/
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object),
 };
-
+// Default caso a Prop não receba o tipo experado.
 MovieList.defaultProps = {
   movies: {},
 };

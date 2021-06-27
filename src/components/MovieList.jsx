@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 // implement MovieList component here
 import React from 'react';
+import PropType from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
@@ -24,4 +25,14 @@ class MovieList extends React.Component {
     );
   }
 }
+
+MovieList.propTypes = {
+  movies: PropType.shape([{
+    title: PropType.string,
+    subtitle: PropType.string,
+    storyline: PropType.string,
+    rating: PropType.number,
+    imagePath: PropType.string,
+  }]).isRequired,
+};
 export default MovieList;

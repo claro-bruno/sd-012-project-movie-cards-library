@@ -3,8 +3,17 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    return <div><MovieCard /></div>;
+    const { movies } = this.props;
+    return (
+      <div>
+        { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
+      </div>
+    );
   }
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.string.isRequired,
+}; // Requisito 17 Adicione PropTypes a todos os componentes
 
 export default MovieList;

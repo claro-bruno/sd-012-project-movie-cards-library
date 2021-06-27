@@ -1,9 +1,9 @@
-// import React from 'react';
+import React from 'react';
 
-// class Rating extends Component {
-//   render() {
-//     return <h1>Test</h1>;
-//   }
-// }
+class Rating extends React.Component {
+  render() {
+    return <h1>Test</h1>;
+  }
+}
 
-// export default Rating;
+export default Rating;

@@ -3,8 +3,11 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
+    const { movieCard } = this.props;
     return (
-      <section />
+      <section>
+        <img src={ movieCard } alt="" />
+      </section>
     );
   }
 }

@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import MovieCard from './components/MovieCard';
 import MovieList from './components/MovieList';
-import Rating from './components/Rating';
+import MovieData from './data'
 
 class App extends React.Component {
   render() {

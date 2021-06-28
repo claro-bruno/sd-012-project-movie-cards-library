@@ -1,14 +1,16 @@
 import React from 'react';
-import movies from '../data';
+import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
+    const { rating } = this.props;
     return (
-      <div>
-        { movies.rating }
-      </div>
+      <div key={ rating }>{ rating }</div>
     );
   }
 }
 
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
 export default Rating;

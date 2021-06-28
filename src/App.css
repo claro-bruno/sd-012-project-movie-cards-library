@@ -1,12 +1,14 @@
 body {
-  background-color: whitesmoke;
+  background-color: #14284e;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: #00000a;
+  border-bottom: white 6px dashed;
+  border-top: white 6px dashed;
   display: flex;
   height: 100px;
   justify-content: center;
@@ -27,7 +29,7 @@ body {
 
 .movie-card {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: thick  groove  #8f8378;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -35,6 +37,11 @@ body {
   margin: 5px;
   overflow: hidden;
   width: 300px;
+}
+
+.movie-card:hover {
+  background-color: aliceblue;
+  border: thick  groove  #2096d8;
 }
 
 
@@ -66,7 +73,7 @@ body {
 }
 
 .rating {
-  background-color: #007bff;
+  background-color: #42579e;
   border-radius: 25px;
   color: white;
   font-size: 16px;

@@ -17,4 +17,8 @@ Rating.propTypes = {
   rating: PropTypes.number,
 };
 
+Rating.defaultProps = {
+  rating: [],
+};
+
 export default Rating;

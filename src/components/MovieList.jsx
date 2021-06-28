@@ -14,7 +14,7 @@ class MovieList extends React.Component {
           // eslint-disable-next-line react/jsx-key
           // eslint-disable-next-line react/prop-types
           // eslint-disable-next-line react/jsx-key
-          movies.map((movieC) => <MovieCard key={ movieC.title } movieCard={ movieC } />)
+          movies.map((movieC) => <MovieCard key={ movieC.title } movie={ movieC } />)
         }
         {/* <MovieCard movieCard={ movies[0] } />
         <MovieCard movieCard={ movies[1] } />

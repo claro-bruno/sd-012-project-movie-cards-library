@@ -3,7 +3,7 @@ import React from 'react';
 class MovieCard extends React.Component {
   render() {
     return (
-      <span>Só nos test </span>
+      <span>só de teste</span>
     );
   }
 }

@@ -4,7 +4,11 @@ import movies from '../data';
 
 class MovieList extends React.Component {
   render() {
-    return movies.map((movie) => <MovieCard infoMovie={ movie } key={ movie.title } />);
+    return (movies.map((Movie) => (<MovieCard
+      className="movie-card"
+      movie={ Movie }
+      key={ Movie.title }
+    />)));
   }
 }
 export default MovieList;

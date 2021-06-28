@@ -9,7 +9,7 @@ class MovieList extends React.Component {
     // eslint-disable-next-line react/prop-types
     const { movies } = this.props;
     return (
-      <div>
+      <div className="movie-list">
         {
           // eslint-disable-next-line react/jsx-key
           // eslint-disable-next-line react/prop-types

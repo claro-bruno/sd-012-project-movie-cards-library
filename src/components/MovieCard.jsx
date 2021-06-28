@@ -1,18 +1,17 @@
-/* eslint-disable react/prop-types */
 // implement MovieCard component here
 import React from 'react';
 import PropType from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { movieCard } = this.props;
+    const { movie } = this.props;
     return (
       <div>
-        <h2>{movieCard.title}</h2>
-        <h3>{movieCard.subtitle}</h3>
-        <p>{movieCard.storyline}</p>
-        <p>{movieCard.rating}</p>
-        <img src={ movieCard.imagePath } alt={ movieCard.title } />
+        <h2>{movie.title}</h2>
+        <h3>{movie.subtitle}</h3>
+        <p>{movie.storyline}</p>
+        <p>{movie.rating}</p>
+        <img src={ movie.imagePath } alt={ movie.title } />
       </div>
     );
   }
@@ -20,7 +19,7 @@ class MovieCard extends React.Component {
 
 MovieCard.propTypes = {
   // eslint-disable-next-line react/require-default-props
-  movieCard: PropType.shape({
+  movie: PropType.shape({
     title: PropType.string,
     subtitle: PropType.string,
     storyline: PropType.string,

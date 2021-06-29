@@ -1,5 +1,6 @@
 // implement MovieList component here
 import React from 'react';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
@@ -8,7 +9,10 @@ class MovieList extends React.Component {
     return (
       <main>
         <section>
-          {movies}
+          {[movies].map((movie, indice) => (
+            <div key={ indice }>
+              <MovieCard src={ movie.imagePath } />
+            </div>))}
         </section>
       </main>
     );

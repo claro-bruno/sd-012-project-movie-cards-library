@@ -7,13 +7,13 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-      movies.map((movieMap) => <MovieCard key={movieMap.title} movie={movieMap}/> )
-    )
+      movies.map((movieMap) => <MovieCard key={ movieMap.title } movie={ movieMap } />)
+    );
   }
 }
 
 MovieList.propTypes = {
-  movies: PropType.arrayOf(PropType.object)
-}
+  movies: PropType.arrayOf(PropType.object),
+};
 
 export default MovieList;

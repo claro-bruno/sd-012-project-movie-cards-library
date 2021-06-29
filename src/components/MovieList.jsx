@@ -12,7 +12,7 @@ class MovieList extends React.Component {
 }
 // Auxiliado pela dúvida do Josimar Souza no Slack
 
-/* MovieList.propTypes = {
+MovieList.propTypes = {
   movies: PropTypes.shape({
     imagePath: PropTypes.string,
     title: PropTypes.string,
@@ -20,6 +20,6 @@ class MovieList extends React.Component {
     storyline: PropTypes.string,
     rating: PropTypes.number,
   }).isRequired,
-}; */
+};
 
 export default MovieList;

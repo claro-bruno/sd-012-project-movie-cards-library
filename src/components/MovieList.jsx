@@ -10,9 +10,7 @@ class MovieList extends React.Component {
       <main>
         <section>
           {[movies].map((movie, indice) => (
-            <div key={ indice }>
-              <MovieCard src={ movie.imagePath } />
-            </div>))}
+            <MovieCard key={ `Movie Title ${indice + 1}` } src={ movie.imagePath } />))}
         </section>
       </main>
     );

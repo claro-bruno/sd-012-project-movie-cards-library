@@ -5,7 +5,9 @@ class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
     return(
-      <p>oi</p>
+      <section>
+        <img src={movie.imagePath} alt="Final Fantasy XV: KingsGlaive" />
+      </section>
     )
   }
 }

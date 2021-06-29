@@ -19,6 +19,6 @@ MovieList.propTypes = {
     storyline: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
   })).isRequired,
-}
+};
 
 export default MovieList;

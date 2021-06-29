@@ -13,7 +13,7 @@ class MovieList extends React.Component {
 // Auxiliado pela dúvida do Josimar Souza no Slack
 
 MovieList.propTypes = {
-  movies: PropTypes.shape({
+  movies: PropTypes.arrayOf({
     imagePath: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,

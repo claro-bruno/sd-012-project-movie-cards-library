@@ -3,10 +3,10 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    const src = this.props;
+    const { title, subtitle, storyline, imagePath, rating} = this.props;
     return (
       <div>
-        <img src={ src } alt="imagem do filme" />
+        <img src={ imagePath } alt="Imagem do filme." />
       </div>
     );
   }

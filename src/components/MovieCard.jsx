@@ -7,6 +7,7 @@ class MovieCard extends React.Component {
     return(
       <section>
         <img src={movie.imagePath} alt="Final Fantasy XV: KingsGlaive" />
+        <h4>{movie.title}</h4>
       </section>
     )
   }

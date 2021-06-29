@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Tive a ajuda do Bruno Augusto para revisar o código todo.
+ */
+
 class Rating extends React.Component {
   render() {
     const { rating } = this.props;

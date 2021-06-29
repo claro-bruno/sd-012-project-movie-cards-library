@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
+/**
+ * Tive a ajuda do Bruno Augusto para resolver essa parte e revisar o código todo.
+ */
+
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;

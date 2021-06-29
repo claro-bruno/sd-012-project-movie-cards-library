@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Header() {
-  return (<header><h1>Movie Cards Library</h1></header>);
+  return (
+    <header className="movie-card-header">
+      <h1 className="page-title">Movie Cards Library</h1>
+    </header>
+  );
 }
 
 export default Header;

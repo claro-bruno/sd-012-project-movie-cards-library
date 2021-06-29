@@ -1,12 +1,16 @@
 // implement MovieList component here
 import React from 'react';
-import { render } from 'enzyme';
-import movies from './data';
 
 class MovieList extends React.Component {
   render() {
+    const movies = this.props;
+
     return (
-      <MovieList {this.props.movies} />
+      <main>
+        <section>
+          {movies}
+        </section>
+      </main>
     );
   }
 }

@@ -4,9 +4,8 @@ class Rating extends React.Component {
     render(){
         const { rating } = this.props;
         return(
-            <span>{rating}</span>            
+            <span className = "rating" >{rating}</span>            
         )
-
     };
 }
 export default Rating;

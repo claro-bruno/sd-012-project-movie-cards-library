@@ -9,12 +9,14 @@ class MovieList extends React.Component {
     return (
       <main>
         <section>
-          {movies.map((movie, indice) => (
-            <MovieCard key={ `Movie Title ${indice + 1}` } movie={ movie } />))}
+          {movies.map((movie) => (
+            <MovieCard key={ movie.title } movie={ movie } />))}
         </section>
       </main>
     );
   }
 }
+
+{/* `Movie Title ${indice + 1}` */}
 
 export default MovieList;

@@ -5,7 +5,7 @@ import movies from './data';
 
 function App() {
   return (
-    <div className="App">   
+    <div className="App">
       <MovieList movies={ movies } />
     </div>
   );

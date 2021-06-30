@@ -1,15 +1,28 @@
-// implement MovieCard component here
+  // implement MovieCard component here
 import React from 'react';
 
-class Header extends React.Component {
+class MovieCard extends React.Component {
   render() {
+    const { movies } = this.props;
+
     return (
-      <header>
-        const titulo =
-        <h1>Movie Cards Library</h1>
-      </header>
+      <section>
+        <h2>{movies.title}</h2>
+        <h3>{movies.subtitle}</h3>
+        <img src={ movies.imagePath } alt={ movies.title } />
+        <p>{movies.storyline}</p>
+        <h3>{movies.rating}</h3>
+      </section>
     );
   }
 }
 
-export default Header;
+MovieCard.propTypes = [{
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  imagePath: PropTypes.string,
+  storyline: PropTypes.string,
+  rating: PropTypes.number,
+}];
+
+export default MovieCard;

@@ -1,10 +1,10 @@
 header {
-    background-color: black;
-    padding: 24px 0;
+  background-color: black;
+  padding: 24px 0;
 }
 
 header > h1 {
-    margin: 0;
-    color: #231fff;
-    text-align: center;
+  color: #231fff;
+  margin: 0;
+  text-align: center;
 }

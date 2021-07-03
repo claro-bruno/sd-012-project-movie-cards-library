@@ -6,7 +6,7 @@ import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    // estou recebendo as informções do movie list cada filme
+    // estou recebendo as informções do movie list cada filme.
     const { movie } = this.props;
     /* estou preenchendo h4, h5, p e imagem com as informações da props recebida */
     return (

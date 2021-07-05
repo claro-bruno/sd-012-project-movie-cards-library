@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+// import PropTypes from 'prop-types';
 
 class MovieList extends React.Component {
   render() {
-    const { movies } = this.props;
+    // const { movies } = this.props;
     return (
       <div>
         movies

@@ -9,8 +9,8 @@ class Rating extends React.Component {
       <p className="rating">{ rating }</p>
     );
   }
-}
-
+}   
+    
 Rating.propTypes = {
   rating: PropTypes.number.isRequired,
 };

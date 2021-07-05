@@ -5,7 +5,7 @@ class Rating extends React.Component {
   render() {
     const { rating } = this.props;
     return (
-      <div>
+      <div className="movie-card-rating">
         <p className="rating">
           {rating}
         </p>
@@ -15,7 +15,13 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
 };
+
+Rating.defaultProps = {
+  rating: 0,
+};
+// Resolvi os erros de prop ao ver o exemplo dessa página:
+// https://www.geeksforgeeks.org/reactjs-defaultprops/
 
 export default Rating;

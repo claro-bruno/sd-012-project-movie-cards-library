@@ -1,3 +1,4 @@
+// Creditos ao Lucas Mulato que fez pair programing para me ajudar a fazer o projeto
 import React from 'react';
 import './App.css';
 import Header from './components/Header';

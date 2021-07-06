@@ -2,7 +2,7 @@ import React from 'react';
 
 class Rating extends React.Component {
   render() {
-    const { rating } = this.props; 
+    const { rating } = this.props;
     return (
       <section className="rating">
         <p>{ rating }</p>
@@ -11,4 +11,4 @@ class Rating extends React.Component {
   }
 }
 
-export default Rating; 
+export default Rating;

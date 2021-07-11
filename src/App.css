@@ -23,7 +23,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   padding: 48px 30px;
-  
 }
 
 .movie-card {
@@ -49,10 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 450px;
-  margin-left: -2%;
-  margin-right: -2%;
-  margin-top: -2%;
-  margin-bottom: -2%;
+  margin-top: -2% -2%;
   overflow: hidden;
   width: 300px;
   z-index: 2;

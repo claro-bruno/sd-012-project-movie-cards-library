@@ -29,13 +29,13 @@ const movies = [
   },
 ];
 
-describe.skip('11 - Crie um componente `<Rating />`', () => {
+describe('11 - Crie um componente `<Rating />`', () => {
   it('Renderize o componente `<Rating />`', () => {
     shallow(<Rating />);
   });
 });
 
-describe.skip('12 - Renderize a nota de um filme dentro de `Rating`', () => {
+describe('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   let wrapper;
   it('Renderize a nota de um filme dentro de `Rating`', () => {
     wrapper = shallow(<Rating rating={ 3 } />);
@@ -43,7 +43,7 @@ describe.skip('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   });
 });
 const requisito13 = '13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`';
-describe.skip(requisito13, () => {
+describe(requisito13, () => {
   let wrapper;
   const movie = movies[0];
   it('Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
@@ -52,7 +52,7 @@ describe.skip(requisito13, () => {
   });
 });
 const req14 = '14 - Passe como prop para o componente `<Rating/>` o atributo `rating`';
-describe.skip(req14, () => {
+describe(req14, () => {
   let wrapper;
   const movie = movies[0];
   it('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {

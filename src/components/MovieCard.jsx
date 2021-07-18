@@ -9,7 +9,7 @@ export default class MovieCard extends Component {
       <div>
         <img src={ movie.imagePath } alt="Imagem do filme" />
         <h4>{ movie.title }</h4>
-        <p>{ movie.subtitle }</p>
+        <h5>{ movie.subtitle }</h5>
         <p>{ movie.storyline }</p>
       </div>
     );

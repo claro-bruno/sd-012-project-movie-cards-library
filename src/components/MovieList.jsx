@@ -35,9 +35,6 @@ export default class MovieList extends Component {
           <MovieCard
             key={ e.title }
             movie={ e }
-            title={ e.title }
-            subtitle={ e.subtitle }
-            storyline={ e.storyline }
           />
         ))}
       </div>

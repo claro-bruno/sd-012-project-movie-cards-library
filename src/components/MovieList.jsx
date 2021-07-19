@@ -6,11 +6,11 @@ export default class MovieList extends Component {
   render() {
     const { movies } = this.props;
     return (
-      <div>
+      <main className="movie-list">
         {movies.map((e) => (
           <MovieCard key={ e.title } movie={ e } />
         ))}
-      </div>
+      </main>
     );
   }
 }

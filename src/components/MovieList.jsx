@@ -5,7 +5,6 @@ import MovieCard from './MovieCard';
 export default class MovieList extends Component {
   render() {
     const { movies } = this.props;
-    console.log(movies);
     return (
       <div>
         {movies.map((e) => (

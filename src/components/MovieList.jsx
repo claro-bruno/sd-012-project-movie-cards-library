@@ -2,22 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-let oi = 'oi';
-oi = 'teste';
-console.log(oi);
-
 export default class MovieList extends Component {
-
   render() {
     const { movies } = this.props;
     console.log(movies);
     return (
       <div>
         {movies.map((e) => (
-          <MovieCard
-            key={ e.title }
-            movie={ e }
-          />
+          <MovieCard key={ e.title } movie={ e } />
         ))}
       </div>
     );

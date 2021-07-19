@@ -1,34 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-export default class MovieList extends Component {
-  render() {
-    const rating = 4.5;
-    const ratingThree = 3;
-    const movies = [
-      {
-        title: 'Movie Title 1',
-        subtitle: 'Movie Subtitle 1',
-        storyline: 'Movie Storyline 1',
-        rating,
-        imagePath: 'images/movie_1',
-      },
-      {
-        title: 'Movie Title 2',
-        subtitle: 'Movie Subtitle 2',
-        storyline: 'Movie Storyline 2',
-        rating,
-        imagePath: 'images/movie_2',
-      },
-      {
-        title: 'Movie Title 3',
-        subtitle: 'Movie Subtitle 3',
-        storyline: 'Movie Storyline 3',
-        ratingThree,
-        imagePath: 'images/movie_3',
-      },
-    ];
+let oi = 'oi';
+oi = 'teste';
+console.log(oi);
 
+export default class MovieList extends Component {
+
+  render() {
+    const { movies } = this.props;
+    console.log(movies);
     return (
       <div>
         {movies.map((e) => (
@@ -41,3 +23,17 @@ export default class MovieList extends Component {
     );
   }
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+// MovieList.propTypes = {
+//   movies: PropTypes.shape([{
+//     title: PropTypes.string,
+//     subtitle: PropTypes.string,
+//     storyline: PropTypes.string,
+//     rating: PropTypes.number,
+//     imagePath: PropTypes.string,
+//   }]).isRequired,
+// };

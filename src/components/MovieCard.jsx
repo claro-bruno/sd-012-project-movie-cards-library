@@ -8,9 +8,9 @@ export default class MovieCard extends Component {
     return (
       <div>
         <img src={ movie.imagePath } alt="Imagem do filme" />
-        <h4>{ movie.title }</h4>
-        <h5>{ movie.subtitle }</h5>
-        <p>{ movie.storyline }</p>
+        <h4>{movie.title}</h4>
+        <h5>{movie.subtitle}</h5>
+        <p>{movie.storyline}</p>
       </div>
     );
   }
@@ -21,6 +21,7 @@ MovieCard.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
+    rating: PropTypes.number,
     imagePath: PropTypes.string,
   }).isRequired,
 };
